@@ -1,2 +1,5 @@
-# unicast-based-multicast-2Dmeshes
-unicast based Multicast for 2d meshes 
+## build the project
+
+cmake .
+
+make
