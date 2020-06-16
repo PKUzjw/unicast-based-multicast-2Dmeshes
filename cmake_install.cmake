@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/Simulator
+# Install script for directory: /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/Simulator/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

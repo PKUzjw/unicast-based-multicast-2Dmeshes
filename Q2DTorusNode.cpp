@@ -48,7 +48,7 @@ void	Q2DTorusNode::setCoordinate(int _nodeid ,int _x, int _y){
 			
 				}
 
-// buff1 = 16, buff2 = 0
+
 void	Q2DTorusNode::setbuffer( int buff1, int buff2)            //   num is the share buffer number
 	{ 
 

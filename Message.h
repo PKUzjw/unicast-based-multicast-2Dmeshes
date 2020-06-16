@@ -57,6 +57,7 @@ NodeInfo* routpath; // : the ith flit now at routpath[i].node and take routpath[
 			routpath[i].node = src;
 			routpath[i].channel = 0;
 			routpath[i].buff = NULL;
+			
 		}
 		step = 0;
 		active = true;

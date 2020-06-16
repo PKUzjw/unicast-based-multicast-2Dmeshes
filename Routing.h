@@ -28,7 +28,7 @@ public:
 	}
 
 int chkWrplnk(Q2DTorusNode* cur, Q2DTorusNode* dst);//check how many wrap links need from cur to dst.
-bool    checkBuffer(Buffer *buff1 , int &chn, Buffer*& record);
+bool			checkBuffer(Buffer *buff1 , int &chn, Buffer*& record);
 
 
 NodeInfo*	forward(Message&);

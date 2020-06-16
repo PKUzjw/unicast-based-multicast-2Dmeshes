@@ -25,12 +25,10 @@ Message*  Event::genMes(){   //generate a message
 		int  src, dest;
 		tempRand = abs(rand()) % (k * k );
 		src = tempRand;
-//        src = 36;
 		while (1){
 			tempRand = abs(rand()) % (k * k );
 			if ( tempRand != src){
 				dest = tempRand;
-//                dest = 37;
 				break;
 			}
 		}
@@ -226,6 +224,6 @@ void       Event::forwardMes(Message& s){
 
 		
 	}
-	cout << "src: " << s.src << "; dst: " << s.dst << endl ;
+	//cout << s.src << "dst: " << s.dst << endl ;
 
 }

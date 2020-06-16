@@ -23,16 +23,16 @@ int main()
 	 GENERATETYPE = allgen;	
 	 flowalg = 1;
 	 totalcircle = 100000;
-	 knode    = 8;
+	 knode    = 4;
 	 Q2DTorus* tor = NULL;//网络结构，以前实现的torus网络，为了简单，我改为了mesh结构但名字没有改
 	 Event* s = NULL;
 	 int r1, r2;
 	 string gen[5] = {"0","1", "2", "3", "4"};
-	 string filename[5] = {"data/gene4/Bubble Flow",
-						   "data/gene4/clue-WF",
-						   "data/gene4/clue-DOR",
-						   "data/gene4/FCclue-DOR",
-						   "data/gene4/FCclue-WF",
+	 string filename[5] = {"data//gene4//Bubble Flow",
+						   "data//gene4//clue-WF",
+						   "data//gene4//clue-DOR",
+						   "data//gene4//FCclue-DOR",
+						   "data//gene4//FCclue-WF",
 							 };//结果的输出文件路径，因为以前实现了5种路由算法，所以这里有5个文件路径
 
 
@@ -65,9 +65,9 @@ int main()
   ***********************************************************************************/
 	//linkrate控制消息产生速率
 	 for(linkrate = 0.01; linkrate < 1;){
-				//r1 = 16, r2 = 0
+
 				 r1 = r1buffer[round] * MESSLENGTH;	//以flit个数为基本单位
-				 r2 = r2buffer[round] * MESSLENGTH;
+				 r2 = r2buffer[round] * MESSLENGTH;	
 			     tor = new Q2DTorus(knode, r1, r2); //初始化网络结构
 				 
 
@@ -78,12 +78,12 @@ int main()
 					   rout1 = new Routing(tor);
 					   break;
 				 }
-
-				 s = new Event(rout1);
-
-
+				 
+			
+				  	s = new Event(rout1);			
+				 
+								 
 			float msgpercir = (float)  (linkrate * 2 * 2 * knode/ (MESSLENGTH * 10)) ;//每个周期每个节点产生的message数，还要除以10是因为allvecmess有10个元素
-			cout << "message nums: " << msgpercir << endl;
 			//saturationRate = (double)(knode * 2 * 2) / (double)(knode * knode); 在mesh网络中的饱和吞吐量
 			//msgpercir = linkrate * saturationRate * knode * knode; 每个周期每个节点产生的flit数
 		
@@ -101,10 +101,9 @@ int main()
 	//执行totalcircle个周期，getsize(allvecmess) < threshold只是自己加的限制条件，可以有也可以删除，具体的threshold和totalcircle值也可以在前面修改									
 			for(int i = 0; i < totalcircle && getsize(allvecmess) < threshold; i++){		
 				vector<Message*>& vecmess = allvecmess[ i % 10];
-
-				for(k += msgpercir ; k > 0; k--){
-					allmess++;//总的产生消息数加一
-					vecmess.push_back(s->genMes());//产生消息放入	allvecmess的某个元素中
+				for(  k += msgpercir ; k > 0; k--){					
+								allmess++;//总的产生消息数加一
+							vecmess.push_back(s->genMes());//产生消息放入	allvecmess的某个元素中	
 				}
 
 
@@ -152,7 +151,6 @@ int main()
 /*****************************************************************************
 
 				output results
-
   ****************************************************************************/
 
 	int size = getsize(allvecmess);
@@ -168,10 +166,7 @@ int main()
 	out << linkrate * ((float) s->messarrive / allmess)  
 		<< " " << (s->totalcir/s->messarrive) << endl;
 
-	cout << "*****************" << endl;
-	cout << linkrate * ((float) s->messarrive / allmess)
-		<< " " << (s->totalcir/s->messarrive) << endl;
-	cout << "*****************" << endl;
+
 
 
 
@@ -235,7 +230,10 @@ int main()
 					if(linkrate < 0.4) linkrate += 0.1;
 					else linkrate += 0.02;
 					break;
+
+
 			}
+				
 		 }   // each linkrate end
 	} // round end
   }

@@ -5,6 +5,8 @@
 
 	Q2DTorus::Q2DTorus(int n, int R1buffer, int R2buffer)
 {
+
+		
 		k = n;
 		int t = k*k;
 		head = new Q2DTorusNode[t];
@@ -12,15 +14,20 @@
 		int x = 0, y = 0;
 		for( x = 0; x < k; x++){
 			for( y = 0; y < k; y++){
+			
 				int id = x  + y * k  ; 
 				(head + id)->setTorus(this);
 				(head+id)->setCoordinate(id, x, y);				
 				(head+id)->setbuffer(R1buffer, R2buffer);
+				
+					
+				
 			}
 		}
 		
 		for( x = 0; x < k; x++){
 			for( y = 0; y < k; y++){
+			
 				int id = x  + y * k ; 
 				int xneg, xpos , yneg, ypos;
 				//注释中是torus网络结构，实现torus网络的同学可以借鉴
@@ -46,7 +53,7 @@
 				else   ypos = -1;
 			
 				(head + id)->setLinkBuffer(xneg, xpos, yneg, ypos);
-				//记录mesh网络中每个节点上下左右相邻的节点id
+				
 				
 			}
 		}
