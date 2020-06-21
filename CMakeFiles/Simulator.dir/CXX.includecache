@@ -12,14 +12,6 @@ Q2Dtorus.h
 Message.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Message.h
 
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Event.cpp
-Event.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Event.h
-math.h
--
-Message.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Message.h
-
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Event.h
 Routing.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing.h
@@ -40,17 +32,7 @@ assert.h
 Q2DTorusNode.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
 
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorus.cpp
-assert.h
--
-Q2DTorus.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorus.h
-
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorus.h
-Q2DTorusNode.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
-
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.cpp
 Q2DTorusNode.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
 
@@ -68,12 +50,6 @@ Q2DTorus.h
 Q2DTorusNode.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
 
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing.cpp
-Routing.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing.h
-assert.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/assert.h
-
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing.h
 Allrouting.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Allrouting.h
@@ -81,20 +57,6 @@ Message.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Message.h
 Q2DTorusNode.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
-
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing2.cpp
-Routing2.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing2.h
-assert.h
--
-
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Routing2.h
-Q2DTorusNode.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Q2DTorusNode.h
-Message.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Message.h
-Allrouting.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/Allrouting.h
 
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/common.h
 Q2DTorus.h
@@ -109,10 +71,6 @@ fstream
 -
 
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/main.cpp
-common.h
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/common.h
-
-/Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/testfuc.cpp
 common.h
 /Users/zjw/Documents/THU/课程/高性能计算/大作业/Simulator/unicast-based-multicast-2Dmeshes/common.h
 

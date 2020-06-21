@@ -4,10 +4,14 @@ void Buffer::bufferMin (int chn , int n) {       //share buffers are used first,
 			
 		if(R1 == chn){								//	the separate buffers are used.So first we check the			
 												// separate buffers whether used.
+//            cout << "pre r1: " << r2 << endl;
 		  r1 -= n;
+//            cout << "lat r1: " << r2 << endl;
 		}													
-		else {				
+		else {
+//		    cout << "pre r2: " << r2 << endl;
 		  r2 -= n;
+//            cout << "lat r2: " << r2 << endl;
 		}
 /*
 

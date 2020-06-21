@@ -44,7 +44,7 @@ int main()
 
 
 	 int r1buffer[5] = {1, 2, 1, 2, 2};//虚拟信道1缓存大小，以message个数为基本单位
-	 int r2buffer[5] = {2, 1, 0, 1, 1};//虚拟信道2缓存大小，若无虚拟通道不使用r2
+	 int r2buffer[5] = {2, 1, 1, 1, 1};//虚拟信道2缓存大小，若无虚拟通道不使用r2
 	 int alg[5] = {0, 1, 2, 1, 2};
 	
 
@@ -191,9 +191,9 @@ int main()
 				}
 			}
 			cout << "in the network:      "  << size << endl;
-			outtotest(allvecmess,tor);
-			bufferleft(tor, knode);
-			cout << "max:" << max << endl;
+//			outtotest(allvecmess,tor);
+//			bufferleft(tor, knode);
+//			cout << "max:" << max << endl;
 			break;
 	}
 

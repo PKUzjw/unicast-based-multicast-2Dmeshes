@@ -38,8 +38,8 @@ NodeInfo*	oneWrapLinkrt(Q2DTorusNode* cur, Q2DTorusNode* dst);//from cur to  nee
 NodeInfo*	twoWrapLinkrt(Q2DTorusNode* cur, Q2DTorusNode* dst);//from cur to  need  two wraplink.
 
 
-int		prefer(Buffer *buff1,Buffer *buff2,  int& chn1 , int& chn2, Buffer*& buff);    
-
+//int		prefer(Buffer *buff1,Buffer *buff2,  int& chn1 , int& chn2, Buffer*& buff);
+int prefer(Buffer *buff1, Buffer *buff2, Buffer *buff3, Buffer *buff4, int xdis, int ydis, int& chnx1 , int& chny1, int& chnx2, int& chny2, Buffer*& record);
 };														   
 
 

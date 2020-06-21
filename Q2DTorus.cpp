@@ -51,10 +51,10 @@
 				else   yneg = -1;
 				if (y != k - 1)  ypos = x + (y + 1) * k;
 				else   ypos = -1;
-			
+
 				(head + id)->setLinkBuffer(xneg, xpos, yneg, ypos);
-				
-				
+
+
 			}
 		}
 }
